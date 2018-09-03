@@ -1,0 +1,86 @@
+/*
+
+The asterisk selects EVERYTHING. This zeroes out all margins and borders. You should prolly only do this if you plan to override all default styles.
+* {
+    margin:0;
+    border:0;
+}
+
+*/
+
+body {
+    background-color: #fafafa;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: 18px;
+    font-weight: normal;
+    /* The follwing line is equivalent to the previous three */
+    font: normal 18px Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em;
+}
+
+.container {
+    /* A width in fixed pixels can be used, but it will not adjust to the size of the viewport*/
+    width: 80%;
+    margin: auto;
+}
+
+.box-1 {
+    background-color: #333333;
+    color: #fff;
+    /* 
+        More styling examples 
+        border-right: 5px red solid;
+        border-left: 5px red solid;
+        border-top: 5px red solid;
+        border-bottom: 5px red solid;
+
+        equals
+        
+        border: 5px red solid;
+
+        Attribute order is size, color, style
+
+        individual attributes can be targeted - 
+
+        border-width: 3px;
+
+        border-bottom-width: 10px;
+
+        border-top-style: dotted;
+
+        The last style specified on a target element is applied
+    */
+
+    border: 5px red solid;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*
+    Spacing:
+    From inside to out, elements are surrounded by padding, border, margin.
+    specified in order of top, right, bottom, left.
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    is equal
+    p {
+        margin: 5px 10px 5px 10px;
+    }
+    is equal
+    p {
+        margin: 5px 10px;
+    }
+
+    p {
+        margin: 5px;
+    }
+    adds 5px margin all around the element
+*/
